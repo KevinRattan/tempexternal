@@ -51,7 +51,6 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        console.log(res);
         chai.assert.isTrue(res.text.includes("Error"));
         return done();
       });
